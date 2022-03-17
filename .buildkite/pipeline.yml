@@ -1,0 +1,57 @@
+steps:
+  - label: ":partyparrot: hola buildkite"
+    command: "echo 'My first pipeline!!!'"
+
+  - label: ":lint-roller: CDKTFING"
+    command: "echo 'Let's do this!!!'"
+
+  - group: ":sleuth_or_spy: Tests"
+    key: "tests"
+
+    steps:
+    - label: ":test_tube: Unit tests %t"
+      parallelism: 2
+      command: "echo 'I am running unit specs - parallelising means the action will run across 5 agents and finish faster'"
+
+    - label: ":test_tube: :petri_dish: Integration tests %N"
+      parallelism: 2
+      command: "echo 'My integration tests are slooooow so again using parallelism'"
+
+  - group: ":woman-tipping-hand: Deploy straight to Prod, nah, I meant Staging (ofcourse)"
+    key: "staging-deploy"
+    depends_on: "tests"
+
+    steps:
+      - label: ":terraform: CDKTF Plan staging"
+        command: "echo 'can we create all the things?'"
+      - label: ":terraform: Apply staging"
+        command: "echo 'yes please create all the things!'"
+      - label: ":gcloud: Deploy to staging"
+        command: "echo ':rollercoaster: Yay! here are all the things!'"
+
+  - block: "Release"
+    prompt: "Fill out the details for release"
+    fields:
+      - text: "Release Name"
+        key: "release-name"
+      - text: "Changelog"
+        key: "release-notes"
+        required: false
+      - select: "Type"
+        key: "release-type"
+        default: "beta"
+        options:
+          - label: "Beta"
+            value: "beta"
+          - label: "Stable"
+            value: "stable"
+
+  - group: ":shipit: Deploy to Production, and this time for real"
+
+    steps:
+    - label: ":terraform: CDKTF Plan production"
+      command: "echo 'can we create all the things?'"
+    - label: ":terraform: Apply staging"
+      command: "echo 'yes please create all the things!'"
+    - label: ":gcloud: Deploy to staging"
+      command: "echo ':star2: Here are all the things!'"
