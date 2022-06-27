@@ -1,5 +1,5 @@
 ---
-name: Buildkite: Ask for help
+name: 'Buildkite: Ask for help'
 title: ''
 description: Ask questions about onboarding to Buildkite CI 
 about: For external teams that have questions about onboarding to Buildkite CI
