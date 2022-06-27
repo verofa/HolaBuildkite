@@ -11,8 +11,8 @@ labels: Buildkite, HotW, Onboarding
 THis is a test
 
 ## CI Use Case
-Once your team is allocated Buildkite access by the CI team via Okta you will be able to start following our [Getting
-Started Guide].
+Once your team is allocated Buildkite access by the CI team via Okta you will be able to start following 
+our [Getting Started Guide].
 ## CI Worker Requirements
 
 
