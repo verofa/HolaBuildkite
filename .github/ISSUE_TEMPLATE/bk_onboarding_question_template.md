@@ -1,8 +1,8 @@
 ---
 name: 'Buildkite: Ask for help'
-description: Ask questions about onboarding to Buildkite CI 
-about: For external teams that have questions about onboarding to Buildkite CI
-labels: Question, Buildkite , Onboarding
+description: 'Ask questions about onboarding to Buildkite CI' 
+about: 'For external teams that have questions about onboarding to Buildkite CI'
+labels: 'Question, Buildkite , Onboarding'
 ---
 
 # Onboarding Buildkite CI Questions
@@ -20,7 +20,7 @@ Just a few guidelines to remember before you ask a question:
     > 🔔 If it has been answered but does not satisfy you, feel free to comment on
     > the issue, and we will re-open it.
 
-## 📝 Description
+## Description
 
 ### 🤔 What is the problem, question, or error?
 
@@ -35,7 +35,3 @@ Please add a self-contained, [minimal, reproducible example] with your use case.
 
 Links? References? Anything that will give us more context about the issue you
 are encountering!
-
-[Getting Started With Buildkite]: https://docs.elastic.dev/ci/getting-started-with-buildkite-at-elastic
-[minimal, reproducible example]: https://stackoverflow.com/help/minimal-reproducible-example
-[Filtering and searching issues to find a similar]: https://github.com/elastic/ci/issues?q=label%3ABuildkite+label%3AOnboarding+label%3AQuestion+
