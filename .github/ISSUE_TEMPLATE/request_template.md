@@ -25,4 +25,5 @@ If you cannot find any help there, please feel free to create a new [`Buildkite:
 ## What Happens Next?
 
 
-[Getting Started Guide]: (https://example.com/)
+[Getting Started Guide]: https://example.com/
+[`Buildkite: Ask for help`]: https://github.com/elastic/ci/blob/main/config/buildkite-pipelines.yml
