@@ -15,7 +15,7 @@ Once your team is allocated Buildkite access by the CI team via Okta you will be
 our [Getting Started Guide] .
 ## CI Worker Requirements
 
-
+If you cannot find any help there, please feel free to create a new [`Buildkite: Ask for help`] issue, and we will look at it as soon as possible.
 ## Request for Feedback
 
 
@@ -25,4 +25,4 @@ our [Getting Started Guide] .
 ## What Happens Next?
 
 
-[Getting Started Guide]:(https://example.com/)
+[Getting Started Guide]: (https://example.com/)
